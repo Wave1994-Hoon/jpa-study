@@ -42,6 +42,11 @@ public class JpaMain {
                 .setMaxResults(8)
                 .getResultList();
 
+            // 1차 캐시 예시, 동일성 보장
+            Member findMember1 = em.find(Member.class, 1L);
+            Member findMember2 = em.find(Member.class, 1L);
+            System.out.println("result = " + (findMember1 == findMember2));
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
