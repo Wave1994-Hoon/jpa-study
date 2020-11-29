@@ -28,10 +28,12 @@ public class JpaMain {
         tx.begin();
 
         try {
+            // 비영속
             Member member = new Member();
             member.setName("Hello");
             member.setId(1L);
 
+            // 양속
             em.persist(member);
 
             // JPQL example
