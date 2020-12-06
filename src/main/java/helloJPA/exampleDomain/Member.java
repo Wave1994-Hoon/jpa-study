@@ -1,4 +1,4 @@
-package helloJPA;
+package helloJPA.exampleDomain;
 
 import javax.persistence.*;
 import java.util.Date;

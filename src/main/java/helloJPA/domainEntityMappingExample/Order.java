@@ -1,4 +1,4 @@
-package helloJPA.domain;
+package helloJPA.domainEntityMappingExample;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package helloJPA.domain;
+package helloJPA.domainEntityMappingExample;
 
 public enum OrderStatus {
     ORDER, CANCEL
